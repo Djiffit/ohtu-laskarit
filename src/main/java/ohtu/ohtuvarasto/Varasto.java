@@ -20,8 +20,7 @@ public class Varasto {
     public Varasto(double tilavuus, double alkuSaldo) { // kuormitetaan
         if (tilavuus > 0.0) {
             this.tilavuus = tilavuus;
-        } else // virheellinen, nollataan
-        {
+        } else {
             this.tilavuus = 0.0;  // => käyttökelvoton varasto
         }
         if (alkuSaldo < 0.0) {
@@ -49,8 +48,7 @@ public class Varasto {
 
     // --- asettavat aksessorit eli setterit: ---
     public void lisaaVarastoon(double maara) {
-        if (maara < 0) // virhetilanteessa voidaan tehdä 
-        {
+        if (maara < 0)  {
             return;       // tällainen pikapoistuminenkin!
         }
         if (maara <= paljonkoMahtuu()) // omia aksessoreita voi kutsua
@@ -62,8 +60,7 @@ public class Varasto {
     }
 
     public double otaVarastosta(double maara) {
-        if (maara < 0) // virhetilanteessa voidaan tehdä 
-        {
+        if (maara < 0) {
             return 0.0;   // tällainen pikapoistuminenkin!
         }
         if (maara > saldo) {          // annetaan mitä voidaan
