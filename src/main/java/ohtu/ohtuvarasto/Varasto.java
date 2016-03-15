@@ -51,7 +51,7 @@ public class Varasto {
         if (maara < 0)  {
             return;       // tällainen pikapoistuminenkin!
         }
-        if (maara <= paljonkoMahtuu()) // omia aksessoreita voi kutsua
+        if (maara <= paljonkoMahtuu()) 
         {
             saldo = saldo + maara;          // ihan suoraan sellaisinaan
         } else {
