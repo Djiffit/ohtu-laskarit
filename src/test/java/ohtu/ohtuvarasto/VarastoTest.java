@@ -81,7 +81,7 @@ public class VarastoTest {
     public void varastoEiAnnaOttaaNegatiivista() {
         double saldo = varasto.getSaldo();
         varasto.otaVarastosta(-40000);
-        assertEquals(1111, varasto.getSaldo(), vertailuTarkkuus);
+        assertEquals(saldo, varasto.getSaldo(), vertailuTarkkuus);
     }
           @Test
     public void varastoEiAnnaLaittaaNegatiivista() {
